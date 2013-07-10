@@ -1,8 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 
-var app = express();///express.createServer(express.logger());
-
+var app = express();
 var buf = fs.readFileSync("index.html", "utf-8");
 var json = JSON.stringify(buf);
 
